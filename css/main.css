@@ -1,0 +1,252 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fuente1);
+}
+
+:root{
+    /* colores */
+    --morado: #4c2347;
+    --morado-claro: #5a2952;
+    --blanco: white;
+    --negro: black;
+    --gris: rgb(237 237 228);
+    --gris2: #f7f7f7;
+    --flex: flex;
+    --center: center;
+    --cien: 100%;
+    --cero: 0;
+    --ceropix: 0px;
+    --centrado: 0 30%;
+    /* fuentes */
+    --fuente1: 'Source Sans Pro', sans-serif;
+}
+
+.header{
+    position:fixed;
+    left: var(--cero);
+    top: var(--cero);
+    width: var(--cien);
+    height: 85px;
+    background-color:var(--morado);
+    display: var(--flex);
+    justify-content: space-between;
+    align-items: var(--center);
+}
+
+.img-container{
+    margin: var(--ceropix);
+    width: 155px;
+  
+}
+.img-container a img{
+ width: 97%;
+ text-align: center;
+}
+
+.menu {
+    display: var(--flex);
+    list-style: none;
+    margin-right: 25px;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin: 35px;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.inicio{
+    width: var(--cien);
+    height: 770px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    opacity: 1.9;
+    background-image: url('../img/4-min.jpg');
+    background-position: var(--center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo{
+    margin: var(--ceropix);
+    color: var(--blanco);
+    font-size: 50px;
+    text-align: var(--center);
+}
+
+.servicios{
+    width: var(--cien);
+    height: 750px;
+}
+
+/* titulo global */
+.titulo-main {
+    margin: var(--ceropix);
+    padding-top: 70px;
+    text-align: var(--center);
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--morado-claro);
+}
+
+/* hr global */
+.resaltado {
+    text-align: var(--center);
+    width: 98px;
+    height: 5px;
+    background-color: var(--negro);
+    border-radius: 25px;
+}
+
+.container-servicios {
+    width: var(--cien);
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.tarjeta-servicio{
+    margin: 25px;
+    max-width: 290px;
+    height: 480px;
+    background-color: var(--gris2);
+    padding: 20px;
+}
+.img-servicio{
+   width: 100%;
+}
+.img-3{
+    height: 190px;
+    width: 100%;
+}
+
+.tarjeta-servicio h3 {
+    color:var(--morado-claro);
+    border-radius: 10px;
+    font-weight: 800;
+    text-align: var(--center);
+}
+.tarjeta-servicio p{
+    text-align: var(--center);
+    text-align: justify;
+}
+
+.botom-mas{
+    margin: var(--centrado);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: var(--morado-claro);
+}
+
+/*---------------------------------------->   nosotros */
+
+.nosotros{
+  
+    width: 100%;
+    height: 60rem;
+    display: flex;
+}
+
+.content-info{
+    background-color: var(--gris2);
+    width: 65%;
+    height: 60rem;
+    padding: 0 40px;
+}
+
+.content-imagen{
+    width: 35%;
+    height: 60rem;
+    background-image: url('../img/fondo.jpg');
+    background-position: var(--center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-text{
+    width: 650px;
+    margin-left: 70px;
+    margin-top: 90px;
+}
+
+.content-text h3{
+    color: var(--morado);
+}
+
+.eslogan{
+    width: 100%;
+    height: 80px;
+    background-color:var(--morado-claro);
+    display: var(--flex);
+    align-items: center;
+    justify-content: center ;
+}
+
+.eslogan p {
+    color: white;
+    font-size: 22px;
+}
+
+/* ---------------------------------> contacto */
+.contacto{
+    width: 100%;
+    height: 800px;
+    font-size: 14px;
+}
+
+.content-contacto{
+    margin-top: 4rem;
+    display: var(--flex);
+    width: 100%;
+    justify-content: space-around;
+
+}
+.mapa{
+     width: 400px;
+    height: 450px;
+}
+
+.content-form{
+    max-width: 500px;
+    height: 350px;
+}
+
+.inputs{
+    width: 70%;
+    margin-bottom: 7px;
+}
+.etiqueta{
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    font-family: var(--fuente1);
+}
+
+.boton-caontacto {
+    background-color: var(--morado-claro);
+    color: var(--blanco);
+    width: 150px;
+    height: 35px;
+}
+
+/* por si tenemos errores width="400" height="300" */
+
+@media  (max-width: 1024px) {
+                    .content-text{
+                        margin-left: 0px;
+                    }
+}
